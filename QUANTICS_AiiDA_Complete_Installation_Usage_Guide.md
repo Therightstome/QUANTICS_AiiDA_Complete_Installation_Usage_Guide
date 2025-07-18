@@ -5,7 +5,7 @@
 This guide will help you install and configure the entire QUANTICS-AiiDA system from scratch, including:
 - AiiDA installation and configuration
 - RabbitMQ message broker configuration
-- QUANTICS software local installation (optional)
+- QUANTICS software local installation
 - Hartree cluster connection setup
 - QUANTICS software configuration
 - GUI interface usage
@@ -272,7 +272,7 @@ QUANTICS is a suite of programs capable of setting up and propagating wavepacket
 - Density operator propagation
 - Multi-dimensional potential energy surface fitting (POTFIT)
 
-### 4.3 Local QUANTICS Installation (Optional)
+### 4.3 Local QUANTICS Installation
 
 If you wish to install QUANTICS in your local environment for testing or development, follow these steps:
 
