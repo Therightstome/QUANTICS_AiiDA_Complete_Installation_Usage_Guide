@@ -1,0 +1,22 @@
+run-section
+name = double_well
+propagation
+tfinal = 50.0
+tout = 1.0
+psi gridpop steps auto
+end-run-section
+
+operator-section
+opname = double_well
+end-operator-section
+
+mlbasis-section
+mode1 = HO, 30, 1.0, 0.0
+end-mlbasis-section
+
+initial-section
+build
+init_wf = gauss
+x = -2.0
+px = 2.0
+end-initial-section 

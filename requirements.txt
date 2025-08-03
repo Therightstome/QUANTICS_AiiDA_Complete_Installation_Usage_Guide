@@ -1,0 +1,13 @@
+# QUANTICS Professional GUI Dependencies
+
+# Core GUI framework
+PyQt5>=5.15.0
+
+# Utility packages
+pathlib2>=2.3.0
+
+# Optional AiiDA dependencies (install with: pip install -r requirements.txt -r requirements-aiida.txt)
+# See requirements-aiida.txt for AiiDA-specific packages
+
+# Development dependencies (install with: pip install -r requirements.txt -r requirements-dev.txt)
+# See requirements-dev.txt for development tools 

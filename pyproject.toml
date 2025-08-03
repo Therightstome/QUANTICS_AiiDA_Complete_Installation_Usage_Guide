@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantics-professional-gui"
+version = "3.0.0"
+authors = [
+    {name = "QUANTICS Team", email = "quantics@ucl.ac.uk"},
+]
+description = "Professional interface for QUANTICS quantum dynamics calculations"
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+keywords = ["quantics", "quantum dynamics", "mctdh", "vmcg", "aiida", "gui", "interface"]
+dependencies = [
+    "PyQt5>=5.15.0",
+    "pathlib2>=2.3.0",
+]
+
+[project.optional-dependencies]
+aiida = [
+    "aiida-core[atomic_tools]==2.6.2",
+    "aiida-sge>=1.0.0",
+    "psycopg2-binary>=2.8.0",
+    "paramiko>=2.7.0",
+    "click-completion>=0.5.0",
+]
+dev = [
+    "black>=22.0.0",
+    "pytest>=6.0.0",
+    "flake8>=4.0.0",
+    "jupyter>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/quantics-team/quantics-professional-gui"
+Repository = "https://github.com/quantics-team/quantics-professional-gui"
+Documentation = "https://github.com/quantics-team/quantics-professional-gui/blob/main/README.md"
+Issues = "https://github.com/quantics-team/quantics-professional-gui/issues"
+
+[project.scripts]
+quantics-gui = "quantics_gui:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["examples/**/*", "docs/**/*"] 

@@ -1,0 +1,18 @@
+OP_DEFINE-SECTION
+title
+Double Well Potential
+end-title
+end-op_define-section
+
+PARAMETER-SECTION
+# Double well parameters
+mass = 1.0, ev
+alpha = 0.05, ev
+beta = 0.5, ev
+end-parameter-section
+
+HAMILTONIAN-SECTION
+modes | q1
+1.0*mass | 1 KE
+alpha*q1^4 - beta*q1^2 | 1
+end-hamiltonian-section 

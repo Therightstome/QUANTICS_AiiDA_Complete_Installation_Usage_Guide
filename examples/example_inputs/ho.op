@@ -1,0 +1,20 @@
+OP_DEFINE-SECTION
+title
+Harmonic oscillator Hamiltonian for exercises
+end-title
+end-op_define-section
+
+PARAMETER-SECTION
+omega = 3335.6, cm-1
+end-parameter-section
+
+HAMILTONIAN-SECTION
+-----------------------------------------------------
+  modes          | x
+-----------------------------------------------------
+-0.5*omega       | dq^2
+0.5*omega        | q^2
+-----------------------------------------------------
+end-hamiltonian-section
+
+end-operator
