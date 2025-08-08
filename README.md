@@ -18,7 +18,7 @@ pip install -r requirements.txt
 For AiiDA support:
 ```bash
 pip install -r requirements.txt
-pip install "aiida-core[atomic_tools]==2.6.2" aiida-sge psycopg2-binary paramiko
+pip install aiida-core
 ```
 
 ## Usage
