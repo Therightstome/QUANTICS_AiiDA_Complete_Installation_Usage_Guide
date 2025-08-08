@@ -58,16 +58,7 @@ pip install --upgrade pip
 
 ```bash
 # Install AiiDA core package
-pip install aiida-core[atomic_tools]==2.6.2
-
-# Install PostgreSQL related packages (AiiDA database)
-pip install psycopg2-binary
-
-# Install SGE scheduler plugin
-pip install aiida-sge
-
-# Install other required packages
-pip install paramiko click-completion
+pip install aiida-core
 ```
 
 ### 2.3 Install and Configure PostgreSQL Database

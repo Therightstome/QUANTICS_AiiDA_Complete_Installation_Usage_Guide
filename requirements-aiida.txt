@@ -1,7 +1,7 @@
 # AiiDA workflow management dependencies
 # Install with: pip install -r requirements.txt -r requirements-aiida.txt
 
-aiida-core[atomic_tools]==2.6.2
+aiida-core
 aiida-sge>=1.0.0
 psycopg2-binary>=2.8.0
 paramiko>=2.7.0

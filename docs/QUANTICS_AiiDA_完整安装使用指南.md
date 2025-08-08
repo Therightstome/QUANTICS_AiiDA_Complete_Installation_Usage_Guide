@@ -54,16 +54,7 @@ pip install --upgrade pip
 
 ```bash
 # 安装AiiDA核心包
-pip install aiida-core[atomic_tools]==2.6.2
-
-# 安装PostgreSQL相关包（AiiDA数据库）
-pip install psycopg2-binary
-
-# 安装SGE调度器插件
-pip install aiida-sge
-
-# 安装其他必需的包
-pip install paramiko click-completion
+pip install aiida-core
 ```
 
 ### 2.3 安装和配置PostgreSQL数据库
