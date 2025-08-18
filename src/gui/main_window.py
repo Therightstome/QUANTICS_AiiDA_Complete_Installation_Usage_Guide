@@ -52,7 +52,7 @@ class QuanticsMainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("QUANTICS Professional GUI")
-        self.setGeometry(100, 100, 1400, 900)
+        self.setGeometry(100, 100, 1600, 1000)
 
         # Initialize components
         self.local_runner = LocalQuanticsRunner()
@@ -110,7 +110,7 @@ class QuanticsMainWindow(QMainWindow):
         # Add panels to main layout
         left_widget = QWidget()
         left_widget.setLayout(left_panel)
-        left_widget.setMaximumWidth(500)
+        left_widget.setMaximumWidth(600)
 
         right_widget = QWidget()
         right_widget.setLayout(right_panel)

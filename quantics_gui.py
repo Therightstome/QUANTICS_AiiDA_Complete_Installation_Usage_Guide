@@ -43,7 +43,7 @@ def start_gui(mode="auto"):
     """Start the GUI interface"""
     try:
         # Import GUI components
-        from gui.main_window import QuanticsMainWindow
+        from src.gui.main_window import QuanticsMainWindow
 
         # Check PyQt availability
         try:
