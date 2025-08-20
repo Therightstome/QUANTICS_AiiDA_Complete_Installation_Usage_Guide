@@ -1,4 +1,4 @@
-# Firstly, you should got docs file read and finish QUANTICS_AiiDA_Complete_Installation_Usage_Guide.md. Then continue the remained part.
+# Firstly, you should go to docs file read and finish QUANTICS_AiiDA_Complete_Installation_Usage_Guide.md. Then continue the remained part.
 # QUANTICS Professional GUI
 
 A professional interface for QUANTICS quantum dynamics calculations with support for both local execution and AiiDA workflow management.
