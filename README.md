@@ -21,7 +21,7 @@ For AiiDA support:
 pip install -r requirements.txt
 pip install aiida-core
 ```
-
+For quantics installation, you should go to https://www.chem.ucl.ac.uk/quantics/ and finish it.
 ## Usage
 
 ### GUI Mode (Recommended)
