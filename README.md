@@ -1,4 +1,3 @@
-# Firstly, you should go to docs file read and finish QUANTICS_AiiDA_Complete_Installation_Usage_Guide.md. Then continue the remained part.
 # QUANTICS Professional GUI
 
 A professional interface for QUANTICS quantum dynamics calculations with support for both local execution and AiiDA workflow management.
@@ -22,6 +21,7 @@ pip install -r requirements.txt
 pip install aiida-core
 ```
 For quantics installation, you should go to https://www.chem.ucl.ac.uk/quantics/ and finish it.
+(If you have other question go to docs/QUANTICS_AiiDA_Complete_Installation_Usage_Guide.md and read it.)
 ## Usage
 
 ### GUI Mode (Recommended)
